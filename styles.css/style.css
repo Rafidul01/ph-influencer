@@ -52,6 +52,7 @@ nav {
 }
 /***** banner section *****/
 .banner-container{
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,6 +120,47 @@ nav {
 }
 
 /***** End Logos part *****/
+/***** cards section *****/ 
+.cards{
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    max-width: 329px;
+}
+.card-container{
+    width: 65.375rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.875rem 2.75rem ;
+}
+.collection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-title{
+    text-align: center;
+    color: var(--agray);
+font-size: 28px;
+font-weight: 600;
+line-height: 70px; 
+}
+.cullection-container > .btn-class{
+    margin-top: 3.125rem;
+    width: 65.375rem;
+    display: flex;
+    justify-content: end;
+    padding-left: 18.5rem;
+    /* border: 2px solid rebeccapurple; */
+}
+.btn-class > .btn-primary{
+    background: none;
+    color: rgba(224, 44, 109, 0.87);
+}
+.cards > p > small {
+    color:  #FB8200;
+}
+/***** End cards section *****/
 
  /***** responsive  *****/ 
 @media screen and (max-width:576px) {
@@ -149,6 +191,26 @@ nav {
     .brand-container{
         border: none;
     }
+    .card-container{
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+    .cullection-container > .btn-class{
+        /* margin-top: 3.125rem; */
+        /* width: 65.375rem;     */
+        /* display: flex;
+        justify-content: end; */
+        /* padding-left: 18.5rem; */
+        width: 20rem;
+        padding-left: 0;
+        
+        
+    }
+    .btn-class > .btn-primary{
+        /* padding-right: 50px; */
+        width: 10rem;
+    }
+    
 
 }
  /***** End responsive  *****/
