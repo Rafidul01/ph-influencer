@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --agray: #3a3a3a;
+}
+.btn-primary {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  gap: 0.5rem;
+  padding: 0.625rem 1.5rem;
+  border-radius: 41px;
+  background: #e02c6d;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+.nav-container {
+  width: 75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5.43rem;
+}
+.nav-container > h3 {
+  color: var(--agray);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.nav-container > ul {
+  display: flex;
+  gap: 2.12rem;
+}
+.nav-container > ul li {
+  list-style: none;
+}
+.nav-container > ul > li > a {
+  text-decoration: none;
+  color: var(--agray);
+  font-size: 1rem;
+  font-weight: 600;
+}
+/***** banner section *****/
+.banner-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75rem;    
+}
+.banner{
+    margin-top: 3.13rem;
+}
+.banner-info {
+  max-width: 53.25rem;
+}
+.banner-info .banner-title {
+  color: var(--agray);
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 4.38rem;
+}
+.banner-info .banner-text {
+  text-decoration: none;
+  color: var(--agray);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem 0;
+  max-width: 31.25rem;
+}
+.camera-img {
+  width: 30rem;
+  height: 30rem;
+  background-image: url("../images/Circle\ design.svg");
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  /* border: 2px solid rebeccapurple; */
+}
+.camera-img > img{
+    width: 27.5rem;
+    height: 25.875rem;
+}
+/***** End banner section *****/
+ /***** responsive  *****/ 
+@media screen and (max-width:576px) {
+    .nav-container,
+    .banner,
+    .nav-container > ul
+    {
+        flex-direction: column;
+    }
+    .banner-info{
+        text-align: center;
+        padding: 1.3125rem;
+    }
+    .camera-img > img{
+        height: 12.625rem;
+        width: 11.875rem;
+
+    }
+    .camera-img{
+        height: 16.0625rem;
+        width: 16.0625rem;
+    }
+
+}
+ /***** End responsive  *****/
+ 
