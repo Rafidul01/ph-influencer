@@ -94,10 +94,32 @@ nav {
   /* border: 2px solid rebeccapurple; */
 }
 .camera-img > img{
-    width: 27.5rem;
-    height: 25.875rem;
+    max-width: 27.5rem;
+    max-height: 25.875rem;
 }
 /***** End banner section *****/
+/***** Logos part *****/ 
+.brands{
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    /* align-items: center; */
+}
+.brand-container{
+    margin-top: 4.3125rem;
+    margin-bottom: 6.25rem;
+    width: 69.375rem;
+    border-top: 1px solid gray;
+    border-bottom: 2px solid gray;
+}
+.brand-container > .brand-imgs{
+    display: flex;
+    justify-content: space-around;
+    margin: 2.5rem 0;
+}
+
+/***** End Logos part *****/
+
  /***** responsive  *****/ 
 @media screen and (max-width:576px) {
     .nav-container,
@@ -118,6 +140,14 @@ nav {
     .camera-img{
         height: 16.0625rem;
         width: 16.0625rem;
+    }
+    .brand-container > .brand-imgs{
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 0 2.9375rem ;
+    }
+    .brand-container{
+        border: none;
     }
 
 }
